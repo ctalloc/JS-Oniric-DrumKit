@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>OniRicat's JS Drumkit</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
@@ -11,55 +11,96 @@
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
       <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <div class="keys">
+          <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+          </div>
+          <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+          </div>
+          <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+          </div>
+          <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+          </div>
+          <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+          </div>
+          <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+          </div>
+          <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+          </div>
+          <div data-key="75" class="key">
+            <kbd>K</kbd>
+            <span class="sound">tom</span>
+          </div>
+          <div data-key="76" class="key">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+          </div>
+        </div>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+        <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
+        <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
+        <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
+        <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
+        <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
+        <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
+        <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
+        <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
+        <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
 
-          </li>
-        </ul>
       </main>
 
       <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+        <ul class="footer__list">
+          <li class="footer__list--element">
+            <a
+              class="footer__list--element--link"
+              href="https://oniricat.bandcamp.com/"
+              >Bandcamp</a
+            >
+          </li>
+          <li class="footer__list--element">
+            <a
+              class="footer__list--element--link"
+              href="https://soundcloud.com/oni_ricat"
+              >Soundcloud</a
+            >
+          </li>
+          <li class="footer__list--element">
+            <a
+              class="footer__list--element--link"
+              href="https://pivotlivecomposer.bandcamp.com/album/from-the-blank"
+              >Pivot</a
+            >
+          </li>
+          <li class="footer__list--element">
+              <a
+                class="footer__list--element--linkjs"
+                href="https://javascript30.com/"
+                >Javascript30</a
+              >
+            </li>
+            <li class="footer__list--element">
+              <a
+                class="footer__list--element--linkgit"
+                href="https://github.com/ctalloc/JS-Oniric-DrumKit"
+                >Github</a
+              >
+            </li>
+        </ul>A
       </footer>
 
     </div>

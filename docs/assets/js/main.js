@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";function removeTransition(e){"transform"===e.propertyName&&e.target.classList.remove("playing")}function playSound(e){const t=document.querySelector(`audio[data-key="${e.keyCode}"]`),n=document.querySelector(`div[data-key="${e.keyCode}"]`);t&&(n.classList.add("playing"),t.currentTime=0,t.play())}const keys=Array.from(document.querySelectorAll(".key"));keys.forEach(e=>e.addEventListener("transitionend",removeTransition)),window.addEventListener("keydown",playSound);
