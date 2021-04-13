@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .page__main {
+    background: url('.././images/background.jpg') bottom center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  
+  .keys {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 7rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: rgb(253, 64, 136);
+    box-shadow: 0 0 1rem rgb(253, 64, 73);
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: pink;
+  }
+
+  .page__footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 1rem;
+  }
+  .footer__list{
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+  }
+
+  .footer__list--element{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(46, 46, 46);
+    display: inline-block;
+    border-radius: 10%;
+  }
+  .footer__list--element--link{
+    color: pink;
+  }
+  .footer__list--element--linkjs{
+    color: greenyellow;
+  }
+  .footer__list--element--linkgit{
+    color: rgb(192, 242, 255);
+  }
