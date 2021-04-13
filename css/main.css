@@ -6,7 +6,7 @@
   }
   
   .page__main {
-    background: url('.././images/background.jpg') bottom center;
+    background: url('.././images/background.jpg') center left;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@
     width: 7rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.6);
     text-shadow: 0 0 .5rem black;
   }
   
